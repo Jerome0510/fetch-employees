@@ -1,5 +1,4 @@
-// src/components/EmployeeCard.tsx
-interface EmployeeCardProps {
+interface EmployeeCardsProps {
   employee: {
     name: {
       first: string;
@@ -12,9 +11,9 @@ interface EmployeeCardProps {
   };
 }
 
-function EmployeeCard({ employee }: EmployeeCardProps) {
+function EmployeeCard({ employee }: EmployeeCardsProps) {
   return (
-    <figure className="DisplayEmployee">
+    <figure>
       <img src={employee.picture.medium} alt={employee.name.first} />
       <figcaption>
         <strong>
